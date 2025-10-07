@@ -32,6 +32,56 @@
         font-size: 1.2rem;
         color: #555;
       }
+      .links {
+        margin-top: 1.25rem;
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 0.6rem 1rem;
+        background: #2d7ff9;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        box-shadow: 0 6px 18px rgba(45, 127, 249, 0.18);
+        transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 26px rgba(45, 127, 249, 0.22);
+        opacity: 0.98;
+      }
+      .btn.secondary {
+        background: #6b7280;
+        box-shadow: 0 6px 18px rgba(107, 114, 128, 0.12);
+      }
+      .sections {
+        margin-top: 1.5rem;
+        text-align: left;
+        width: 100%;
+        max-width: 720px;
+      }
+      .section {
+        background: #f8fafc;
+        border-radius: 10px;
+        padding: 1rem 1.1rem;
+        margin-top: 1rem;
+        box-shadow: 0 2px 10px rgba(16,24,40,0.04);
+      }
+      .section-title {
+        margin: 0 0 0.25rem 0;
+        font-size: 1.05rem;
+        color: #111827;
+      }
+      .section-desc {
+        margin: 0 0 0.75rem 0;
+        color: #6b7280;
+        font-size: 0.95rem;
+      }
     </style>
   </head>
   <body>
@@ -41,6 +91,17 @@
         This is the website to demo the visualizations<br />
         Nothing to see here. :(
       </p>
+      <div class="sections">
+        <section class="section" id="homework-1">
+          <h2 class="section-title">Homework 1</h2>
+          <p class="section-desc">Visualizations created for Homework 1. Click a visualization to open it.</p>
+          <div class="links">
+            <a class="btn" href="internet_usage_hierarchy_ordered.html">Internet Usage Hierarchy (Ordered)</a>
+            <a class="btn secondary" href="internet_usage_region_summary.html">Internet Usage Region Summary</a>
+          </div>
+        </section>
+        <!-- Add more <section class="section"> blocks here for Homework 2, Homework 3, etc. -->
+      </div>
     </div>
   </body>
 </html>
